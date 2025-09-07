@@ -12,10 +12,10 @@ elif operation == '/':
     if num2 !=0:
         result = num1 / num2
     else:
-        print ("Error: Ділити на 0 неможливо))")
+        print ("Error: Ділити на 0 неможливо")
         exit() 
 else:
-    print("Помилка: Невідома операція!")
+    print("Помилка: Невідома операція")
     exit()
 
 print("Результат:", result)
