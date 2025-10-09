@@ -46,6 +46,8 @@ class Vaccine(Medicine):
         return True
     def storage_requirements(self) -> str:
         return '2-8 C, Холодильник'
+    def total_price(self) -> float:
+        return self.quantity * self.price * 1.1
     def info(self) -> str:
         return f'Вакцина: {self.name}, кількість: {self.quantity}, ціна: {self.price}, ціна за замовлення: {self.total_price() * 1.1:.2f}, рецепт: {self.requires_prescription()}, умови зберігання: {self.storage_requirements()}'
 
