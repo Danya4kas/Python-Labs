@@ -22,7 +22,6 @@ low_supply.to_csv('low_supply.csv')
 
 print(df.sort_values('total_price', ascending=False).head(3))
 
-
 with open('report.txt', 'w') as f:
     f.write(f"Середня ціна: {mean_price}\n")
     f.write(f"Медіана кількості: {median_quantity}\n")
